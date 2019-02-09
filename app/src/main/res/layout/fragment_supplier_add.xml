@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00353333"
+    tools:context=".fragment.SupplierAddFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/saf_cv_form"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_60sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Tambah Pemasok"
+                        android:textSize="@dimen/_18sdp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/saf_edt_name_s"
+                        android:hint="Nama Pemasok"
+                        style="@style/style_form_add_new" />
+
+                    <EditText
+                        android:id="@+id/saf_edt_email_s"
+                        android:hint="Email Pemasok"
+                        style="@style/style_form_add_new"
+                        android:inputType="textEmailAddress"/>
+
+                    <EditText
+                        android:id="@+id/saf_edt_telp_s"
+                        style="@style/style_form_add_new"
+                        android:hint="Telp Pemasok"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/saf_edt_address_s"
+                        android:hint="Alamat Pemasok"
+                        android:inputType="textMultiLine"
+                        style="@style/style_form_add_new"/>
+
+                    <EditText
+                        android:id="@+id/saf_edt_bank_s"
+                        android:hint="Nama Bank"
+                        style="@style/style_form_add_new"/>
+
+                    <EditText
+                        android:id="@+id/saf_edt_norek_s"
+                        style="@style/style_form_add_new"
+                        android:hint="No. Rekening"
+                        android:inputType="number"/>
+
+                    <EditText
+                        android:id="@+id/saf_edt_anrek_s"
+                        android:hint="Atas Nama Rekening"
+                        style="@style/style_form_add_new"/>
+
+                    <Button
+                        android:id="@+id/saf_btn_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/background_button"
+                        android:text="Tambah Pemasok" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:id="@+id/saf_iv_logo_menu"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignTop="@id/saf_cv_form"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-40dp"
+                android:background="@drawable/background_circle_imageview"
+                android:padding="12dp"
+                android:src="@drawable/ic_add_supplier_big" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

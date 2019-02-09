@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    tools:context=".fragment.BuyerAddFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/baf_cv_form"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_60sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Tambah Pelanggan"
+                        android:textSize="@dimen/_18sdp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/baf_edt_name_b"
+                        style="@style/style_form_add_new"
+                        android:hint="Nama Pelanggan" />
+
+                    <EditText
+                        android:id="@+id/baf_edt_email_b"
+                        style="@style/style_form_add_new"
+                        android:hint="Email Pelanggan"
+                        android:inputType="textEmailAddress" />
+
+                    <EditText
+                        android:id="@+id/baf_edt_telp_b"
+                        style="@style/style_form_add_new"
+                        android:hint="Telp Pelanggan"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/baf_edt_address_b"
+                        style="@style/style_form_add_new"
+                        android:hint="Alamat Pelanggan"
+                        android:inputType="textMultiLine" />
+
+                    <EditText
+                        android:id="@+id/baf_edt_bank_b"
+                        style="@style/style_form_add_new"
+                        android:hint="Nama Bank"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/baf_edt_norek_b"
+                        style="@style/style_form_add_new"
+                        android:hint="No. Rekening"
+                        android:inputType="number"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/baf_edt_anrek_b"
+                        style="@style/style_form_add_new"
+                        android:hint="Atas Nama Rekening"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/baf_btn_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/background_button"
+                        android:text="Tambah Pelanggan" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:id="@+id/baf_iv_logo_menu"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignTop="@id/baf_cv_form"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-40dp"
+                android:background="@drawable/background_circle_imageview"
+                android:padding="12dp"
+                android:src="@drawable/ic_add_supplier_big" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>
