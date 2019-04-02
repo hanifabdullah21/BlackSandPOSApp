@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.supplier.SupplierDetailActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_3sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="Detail Pemasok"
+                android:textSize="@dimen/_16sdp" />
+
+            <!--Name-->
+            <LinearLayout style="@style/style_linear_layout_detail">
+
+                <TextView
+                    style="@style/style_textview_detail_title_component"
+                    android:layout_weight="1.5"
+                    android:text="Nama Pemasok" />
+
+                <TextView
+                    android:id="@+id/sda_tv_name"
+                    style="@style/style_textview_detail_value_component"
+                    tools:text="Kode barangnya berapa yaaa" />
+
+            </LinearLayout>
+
+            <!--Address-->
+            <LinearLayout style="@style/style_linear_layout_detail">
+
+                <TextView
+                    style="@style/style_textview_detail_title_component"
+                    android:layout_weight="1.5"
+                    android:text="Alamat Pemasok" />
+
+                <TextView
+                    android:id="@+id/sda_tv_address"
+                    style="@style/style_textview_detail_value_component"
+                    tools:text="Kode barangnya berapa yaaa" />
+
+            </LinearLayout>
+
+            <!--Telp-->
+            <LinearLayout style="@style/style_linear_layout_detail">
+
+                <TextView
+                    style="@style/style_textview_detail_title_component"
+                    android:layout_weight="1.5"
+                    android:text="Telp Pemasok" />
+
+                <TextView
+                    android:id="@+id/sda_tv_telp"
+                    style="@style/style_textview_detail_value_component"
+                    tools:text="Kode barangnya berapa yaaa" />
+
+            </LinearLayout>
+
+            <!--Email-->
+            <LinearLayout style="@style/style_linear_layout_detail">
+
+                <TextView
+                    style="@style/style_textview_detail_title_component"
+                    android:layout_weight="1.5"
+                    android:text="Email Pemasok" />
+
+                <TextView
+                    android:id="@+id/sda_tv_email"
+                    style="@style/style_textview_detail_value_component"
+                    tools:text="Kode barangnya berapa yaaa" />
+
+            </LinearLayout>
+
+            <!--Bank-->
+            <LinearLayout style="@style/style_linear_layout_detail">
+
+                <TextView
+                    style="@style/style_textview_detail_title_component"
+                    android:layout_weight="1.5"
+                    android:text="Nama Bank" />
+
+                <TextView
+                    android:id="@+id/sda_tv_bank"
+                    style="@style/style_textview_detail_value_component"
+                    tools:text="Kode barangnya berapa yaaa" />
+
+            </LinearLayout>
+
+            <!--No Rekening-->
+            <LinearLayout style="@style/style_linear_layout_detail">
+
+                <TextView
+                    style="@style/style_textview_detail_title_component"
+                    android:layout_weight="1.5"
+                    android:text="No. Rekenning" />
+
+                <TextView
+                    android:id="@+id/sda_tv_norek"
+                    style="@style/style_textview_detail_value_component"
+                    tools:text="Kode barangnya berapa yaaa" />
+
+            </LinearLayout>
+
+            <!--A/n rekening-->
+            <LinearLayout style="@style/style_linear_layout_detail">
+
+                <TextView
+                    style="@style/style_textview_detail_title_component"
+                    android:layout_weight="1.5"
+                    android:text="A/n Rekening" />
+
+                <TextView
+                    android:id="@+id/sda_tv_anrek"
+                    style="@style/style_textview_detail_value_component"
+                    tools:text="Kode barangnya berapa yaaa" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp">
+
+                <Button
+                    android:id="@+id/sda_btn_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_button"
+                    android:text="Tambah"
+                    android:textSize="@dimen/_10sdp" />
+
+                <Button
+                    android:id="@+id/sda_btn_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_button"
+                    android:text="Ubah"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</ScrollView>

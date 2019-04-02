@@ -1,4 +1,7 @@
-<resources>
+<resources
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -22,6 +25,7 @@
         <item name="listPreferredItemHeightSmall">35dp</item>
     </style>
 
+    <!--Style edittext add new item, buyer, supplier-->
     <style name="style_form_add_new">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -30,6 +34,56 @@
         <item name="android:layout_marginRight">@dimen/_10sdp</item>
         <item name="android:background">@drawable/background_edittext</item>
         <item name="android:padding">10dp</item>
+    </style>
+
+    <!--Style of cardview item (recyclerview)-->
+    <style name="style_cardview_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/_10sdp</item>
+        <item name="android:layout_marginRight">@dimen/_10sdp</item>
+        <item name="android:layout_marginTop">@dimen/_2sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_3sdp</item>
+        <item name="cardCornerRadius">@dimen/_8sdp</item>
+        <item name="cardElevation">@dimen/_2sdp</item>
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="@dimen/_2sdp"
+    </style>
+
+    <!--Style Linear Layout Detail Component-->
+    <style name="style_linear_layout_detail">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginBottom">@dimen/_10sdp</item>
+    </style>
+
+    <!--Style TextView Detail of Title Component-->
+    <style name="style_textview_detail_title_component">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <!--Style TextView Detail of Value Component-->
+    <style name="style_textview_detail_value_component">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!--Style Edittext Detail of Value Component-->
+    <style name="style_edittext_detail_value_component">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/background_edittext</item>
     </style>
 
 </resources>

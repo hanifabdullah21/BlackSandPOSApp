@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Barang Ke Keranjang"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginBottom="@dimen/_15sdp"/>
+
+        <!--Code-->
+        <LinearLayout style="@style/style_linear_layout_detail">
+
+            <TextView
+                style="@style/style_textview_detail_title_component"
+                android:text="Kode Barang" />
+
+            <TextView
+                android:id="@+id/dai_tv_code"
+                style="@style/style_edittext_detail_value_component"
+                android:ellipsize="marquee"
+                tools:text="Kode barangnya berapa yaaa" />
+        </LinearLayout>
+
+        <!--Name-->
+        <LinearLayout style="@style/style_linear_layout_detail">
+
+            <TextView
+                style="@style/style_textview_detail_title_component"
+                android:text="Nama Barang" />
+
+            <TextView
+                android:id="@+id/dai_tv_name"
+                style="@style/style_edittext_detail_value_component"
+                android:ellipsize="marquee"
+                tools:text="Kode barangnya berapa yaaa" />
+        </LinearLayout>
+
+        <!--Stock-->
+        <LinearLayout style="@style/style_linear_layout_detail">
+
+            <TextView
+                style="@style/style_textview_detail_title_component"
+                android:text="Stok Barang" />
+
+            <TextView
+                android:id="@+id/dai_tv_stock"
+                style="@style/style_edittext_detail_value_component"
+                android:ellipsize="marquee"
+                tools:text="Kode barangnya berapa yaaa" />
+        </LinearLayout>
+
+        <!--Price-->
+        <LinearLayout style="@style/style_linear_layout_detail">
+
+            <TextView
+                style="@style/style_textview_detail_title_component"
+                android:text="Harga Barang" />
+
+            <TextView
+                android:id="@+id/dai_tv_price"
+                style="@style/style_edittext_detail_value_component"
+                android:ellipsize="marquee"
+                tools:text="Kode barangnya berapa yaaa" />
+        </LinearLayout>
+
+        <!--Total-->
+        <LinearLayout style="@style/style_linear_layout_detail">
+
+            <TextView
+                android:id="@+id/dai_tv_title_total"
+                style="@style/style_textview_detail_title_component"
+                android:text="Jumlah Beli" />
+
+            <EditText
+                android:id="@+id/dai_edt_total"
+                style="@style/style_edittext_detail_value_component"
+                android:inputType="number"
+                android:hint="Masukkan Jumlah Barang"/>
+        </LinearLayout>
+
+        <!--Harga Beli-->
+        <LinearLayout style="@style/style_linear_layout_detail">
+
+            <TextView
+                android:id="@+id/dai_tv_title_price"
+                style="@style/style_textview_detail_title_component"
+                android:text="Jumlah Beli" />
+
+            <EditText
+                android:id="@+id/dai_edt_price"
+                style="@style/style_edittext_detail_value_component"
+                android:inputType="number"
+                android:hint="Masukkan Harga"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/dai_btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/background_button"
+            android:text="Tambah Pembelian" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

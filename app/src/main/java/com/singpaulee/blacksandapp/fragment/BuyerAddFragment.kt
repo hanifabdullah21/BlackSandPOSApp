@@ -68,9 +68,9 @@ class BuyerAddFragment : Fragment() {
 
     @SuppressLint("CheckResult")
     private fun addNewBuyer(nama: String, email: String, telp: String, address: String, bank: String, norek: String, anrek: String) {
-        var prefManager = SharedPrefManager(activity?.applicationContext!!)
-        var token = prefManager.getToken()
-        var header = "Bearer "+token
+            var prefManager = SharedPrefManager(activity?.applicationContext!!)
+            var token = prefManager.getToken()
+            var header = "Bearer "+token
 
         val addNewBuyer: Observable<BuyerResultModel> = RestConfig.retrofit
             .create<ApiInterface>(ApiInterface::class.java)

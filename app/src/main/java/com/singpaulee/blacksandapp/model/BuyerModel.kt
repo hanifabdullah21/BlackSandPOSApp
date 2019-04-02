@@ -1,7 +1,10 @@
 package com.singpaulee.blacksandapp.model
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.Parcelize
 
+@Parcelize
 data class BuyerModel(
 	@field:SerializedName("nama")
 	val nama: String? = null,
@@ -23,11 +26,12 @@ data class BuyerModel(
 
 	@field:SerializedName("alamat")
 	val alamat: String? = null
-)
+
+) : Parcelable
 
 data class BuyerResultListModel(
 	@field:SerializedName("result")
-	val result: ArrayList<BuyerModel?>? = null,
+	val result: ArrayList<BuyerModel>? = null,
 
 	@field:SerializedName("status")
 	val status: MainModel? = null

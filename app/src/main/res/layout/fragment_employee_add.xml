@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.EmployeeAddFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/eaf_cv_form"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_60sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Tambah Karyawan"
+                        android:textSize="@dimen/_18sdp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/eaf_edt_name"
+                        style="@style/style_form_add_new"
+                        android:hint="Nama Karyawan" />
+
+                    <EditText
+                        android:id="@+id/eaf_edt_email"
+                        style="@style/style_form_add_new"
+                        android:hint="Email Karyawan"
+                        android:inputType="textEmailAddress" />
+
+                    <EditText
+                        android:id="@+id/eaf_edt_telp"
+                        style="@style/style_form_add_new"
+                        android:hint="Telp Karyawan"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/eaf_edt_address"
+                        style="@style/style_form_add_new"
+                        android:hint="Alamat Karyawan"
+                        android:inputType="textMultiLine" />
+
+                    <EditText
+                        android:id="@+id/eaf_edt_salary"
+                        style="@style/style_form_add_new"
+                        android:hint="Gaji Karyawan"
+                        android:inputType="number"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/eaf_btn_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/background_button"
+                        android:text="Tambah Karyawan" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:id="@+id/eaf_iv_logo_menu"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignTop="@id/eaf_cv_form"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-40dp"
+                android:background="@drawable/background_circle_imageview"
+                android:padding="12dp"
+                android:src="@drawable/ic_add_supplier_big" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

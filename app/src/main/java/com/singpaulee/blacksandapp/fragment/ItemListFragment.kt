@@ -44,8 +44,7 @@ class ItemListFragment : Fragment() {
     var listItemAdapter: ItemAdapter? = null
     var listItemLayoutManager: RecyclerView.LayoutManager? = null
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
@@ -65,37 +64,31 @@ class ItemListFragment : Fragment() {
 
     @SuppressLint("CheckResult")
     private fun getListOfItem() {
-        var itemModel = ItemModel(2,12,"Bayem",5,8,1200,"2018")
-        var itemModel2 = itemModel.copy(stok = 9)
+        var prefManager = SharedPrefManager(activity?.applicationContext!!)
+        var token = prefManager.getToken()
+        var header = "Bearer " + token
 
-        listItem?.addAll(listOf(itemModel))
-        listItem?.addAll(listOf(itemModel2))
-        listItemAdapter?.notifyDataSetChanged()
+        val getListItem: Observable<ItemResultListModel> = RestConfig.retrofit
+            .create<ApiInterface>(ApiInterface::class.java)
+            .getListItem(header)
 
-//        var prefManager = SharedPrefManager(activity?.applicationContext!!)
-//        var token = prefManager.getToken()
-//        var header = "Bearer " + token
-//
-//        val getListItem: Observable<ItemResultListModel> = RestConfig.retrofit
-//            .create<ApiInterface>(ApiInterface::class.java)
-//            .getListItem(header)
-//
-//        getListItem.subscribeOn(Schedulers.newThread())
-//            .observeOn(AndroidSchedulers.mainThread())
-//            .subscribe({ t: ItemResultListModel? ->
-//                if (t?.status?.success?.equals(true)!!) {
-//                    listItem = t?.result
-//                    listItemAdapter?.notifyDataSetChanged()
-//                    toast(""+listItem?.size)
-//                } else {
-//                    Log.d(TAG, "FAILED " + t?.status?.message)
-//                    toast("Gagal menambahkan barang")
-//                }
-//            }, { error ->
-//                rootView.iaf_btn_add.isEnabled = true
-//                Log.d(TAG, "ERROR " + error.message)
-//                toast("Maaf, sedang ada masalah dengan server.")
-//            })
+        getListItem.subscribeOn(Schedulers.newThread())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe({ t: ItemResultListModel? ->
+                if (t?.status?.success?.equals(true)!!) {
+                    listItem = t?.result
+                    listItemAdapter = ItemAdapter(activity!!.applicationContext, listItem)
+                    listItemAdapter?.notifyDataSetChanged()
+                    rootView.ilf_rv_list_item.adapter = listItemAdapter
+                    toast(""+listItem?.size)
+                } else {
+                    Log.d(TAG, "FAILED " + t?.status?.message)
+                    toast("Gagal menampilkan barang")
+                }
+            }, { error ->
+                Log.d(TAG, "ERROR " + error.message)
+                toast("Maaf, sedang ada masalah dengan server.")
+            })
     }
 
 

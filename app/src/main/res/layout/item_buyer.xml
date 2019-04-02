@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/style_cardview_item">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ib_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:drawableLeft="@drawable/ic_name_xml"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_12sdp"
+            tools:text="Nama Pembeli" />
+
+        <TextView
+            android:id="@+id/ib_tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:drawableLeft="@drawable/ic_address_xml"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_12sdp"
+            tools:text="Alamat Pembeli" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

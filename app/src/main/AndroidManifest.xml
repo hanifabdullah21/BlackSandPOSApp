@@ -1,42 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        package="com.singpaulee.blacksandapp">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.singpaulee.blacksandapp">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-            android:allowBackup="true"
-            android:icon="@drawable/blacksand2"
-            android:label="@string/app_name"
-            android:roundIcon="@drawable/blacksand2"
-            android:supportsRtl="true"
-            android:theme="@style/AppTheme"
-            tools:ignore="GoogleAppIndexingWarning">
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_new"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_new_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity
-                android:name=".activities.SplashScreenActivity"
-                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        </activity>
+            android:name=".activities.main.SplashScreenActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-                android:name=".activities.LoginActivity"
-                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:name=".activities.main.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-                android:name=".activities.RegisterActivity"
-                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        </activity>
+            android:name=".activities.main.RegisterActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-                android:name=".activities.MainActivity"
-                android:label="@string/title_activity_main"
-                android:windowSoftInputMode="adjustResize"
-                android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:name=".activities.main.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activities.item.ItemDetailActivity" />
+        <activity android:name=".activities.buyer.BuyerDetailActivity" />
+        <activity android:name=".activities.supplier.SupplierDetailActivity" />
+        <activity android:name=".activities.transaction.TransactionAddBuyActivity" />
+        <activity android:name=".activities.item.ItemSelectionActivity" />
+        <activity android:name=".activities.transaction.TransactionListBuyActivity" />
+        <activity android:name=".activities.transaction.TransactionDetailBuyActivity" />
+        <activity android:name=".activities.transaction.DebtRepaymentActivity" />
+        <activity android:name=".activities.transaction.TransactionAddSellActivity" />
+        <activity android:name=".activities.report.ReportMonthlyActivity" />
+        <activity android:name=".activities.report.ReportCapitalActivity" />
+        <activity android:name=".activities.report.ReportCashFlowActivity" />
+        <activity android:name=".activities.report.ListReportCapitalActivity" />
+        <activity android:name=".activities.report.ListReportMonthlyActivity" />
+        <activity android:name=".activities.report.ReportBalanceActivity" />
+        <activity android:name=".activities.report.ListReportCashflowActivity" />
+        <activity android:name=".activities.report.ListReportBalanceActivity" />
+        <activity android:name=".activities.report.JournalActivity" />
+        <activity android:name=".activities.report.ListJournalActivity"></activity>
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.singpaulee.blacksandapp.activities
+package com.singpaulee.blacksandapp.activities.main
 
 import android.annotation.SuppressLint
 import android.graphics.Color

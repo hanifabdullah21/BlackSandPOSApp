@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".activities.transaction.TransactionDetailBuyActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tdba_tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_minus5sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/background_edittext"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:textSize="@dimen/_12sdp"
+                tools:text="BELUM LUNAS" />
+
+            <TextView
+                android:id="@+id/tdba_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tdba_tv_status"
+                android:layout_alignBottom="@id/tdba_tv_status"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_12sdp"
+                tools:text="13-Feb-2019" />
+
+            <!--No. Faktur-->
+            <LinearLayout
+                android:id="@+id/tdba_ll_nofaktur"
+                style="@style/style_linear_layout_detail"
+                android:layout_below="@id/tdba_tv_status"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+                <TextView
+                    style="@style/style_textview_detail_title_component"
+                    android:layout_weight="1.5"
+                    android:text="No. Faktur" />
+
+                <TextView
+                    android:id="@+id/tdba_tv_nofaktur"
+                    style="@style/style_textview_detail_value_component"
+                    tools:text="Kode barangnya berapa yaaa" />
+
+            </LinearLayout>
+
+            <!--Supplier-->
+            <LinearLayout
+                android:id="@+id/tdba_ll_supplier"
+                style="@style/style_linear_layout_detail"
+                android:layout_below="@id/tdba_ll_nofaktur"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/tdba_tv_title_supplier"
+                    style="@style/style_textview_detail_title_component"
+                    android:layout_weight="1.5"
+                    android:text="Nama Pemasok" />
+
+                <TextView
+                    android:id="@+id/tdba_tv_supplier"
+                    style="@style/style_textview_detail_value_component"
+                    tools:text="Kode barangnya berapa yaaa" />
+
+            </LinearLayout>
+
+            <!--Due Date-->
+            <LinearLayout
+                android:id="@+id/tdba_ll_due_date"
+                style="@style/style_linear_layout_detail"
+                android:layout_below="@id/tdba_ll_supplier"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+                <TextView
+                    style="@style/style_textview_detail_title_component"
+                    android:layout_weight="1.5"
+                    android:text="Tgl. Jatuh Tempo" />
+
+                <TextView
+                    android:id="@+id/tdba_tv_due_date"
+                    style="@style/style_textview_detail_value_component"
+                    tools:text="Kode barangnya berapa yaaa" />
+
+            </LinearLayout>
+
+            <!--Total-->
+            <LinearLayout
+                android:id="@+id/tdba_ll_total"
+                style="@style/style_linear_layout_detail"
+                android:layout_below="@id/tdba_ll_due_date"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+                <TextView
+                    style="@style/style_textview_detail_title_component"
+                    android:layout_weight="1.5"
+                    android:text="Total" />
+
+                <TextView
+                    android:id="@+id/tdba_tv_total"
+                    style="@style/style_textview_detail_value_component"
+                    tools:text="Kode barangnya berapa yaaa" />
+
+            </LinearLayout>
+
+            <!--debt-->
+            <LinearLayout
+                android:id="@+id/tdba_ll_debt"
+                style="@style/style_linear_layout_detail"
+                android:layout_below="@id/tdba_ll_total"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/tdba_tv_title_debt"
+                    style="@style/style_textview_detail_title_component"
+                    android:layout_weight="1.5"
+                    android:text="Hutang" />
+
+                <TextView
+                    android:id="@+id/tdba_tv_debt"
+                    style="@style/style_textview_detail_value_component"
+                    tools:text="Kode barangnya berapa yaaa" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:text="Daftar Pelunasan Hutang"
+                android:textColor="#000"
+                android:textSize="@dimen/_12sdp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableLayout
+                            android:id="@+id/tdba_tl_repayment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@drawable/border_table">
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="@dimen/_50sdp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/border_table"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_3sdp"
+                                    android:text="Periode" />
+
+                                <TextView
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/border_table"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_3sdp"
+                                    android:text="Id Pelunasan" />
+
+                                <TextView
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/border_table"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_3sdp"
+                                    android:text="Debit" />
+
+                                <TextView
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/border_table"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_3sdp"
+                                    android:text="Kredit" />
+
+                                <TextView
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/border_table"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_3sdp"
+                                    android:text="Saldo" />
+
+                                <TextView
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/border_table"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_3sdp"
+                                    android:text="Tanggal" />
+                            </TableRow>
+
+                        </TableLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/tdba_btn_repayment_debt"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/background_button"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:text="Bayar Hutang"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

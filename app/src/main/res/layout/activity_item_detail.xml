@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.item.ItemDetailActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_3sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="Detail Barang"
+                android:textSize="@dimen/_16sdp" />
+
+            <!--Code-->
+            <LinearLayout style="@style/style_linear_layout_detail">
+
+                <TextView
+                    style="@style/style_textview_detail_title_component"
+                    android:text="Kode Barang" />
+
+                <TextView
+                    android:id="@+id/ida_tv_code"
+                    style="@style/style_textview_detail_value_component"
+                    tools:text="Kode barangnya berapa yaaa" />
+
+            </LinearLayout>
+
+            <!--Name-->
+            <LinearLayout style="@style/style_linear_layout_detail">
+
+                <TextView
+                    style="@style/style_textview_detail_title_component"
+                    android:text="Nama Barang" />
+
+                <TextView
+                    android:id="@+id/ida_tv_name"
+                    style="@style/style_textview_detail_value_component"
+                    tools:text="Nama Barangnya apa uhhh" />
+
+            </LinearLayout>
+
+            <!--Stock Minimal-->
+            <LinearLayout style="@style/style_linear_layout_detail">
+
+                <TextView
+                    style="@style/style_textview_detail_title_component"
+                    android:text="Stok Minimal" />
+
+                <TextView
+                    android:id="@+id/ida_tv_stock_minimal"
+                    style="@style/style_textview_detail_value_component"
+                    tools:text="Nama Barangnya apa uhhh" />
+
+            </LinearLayout>
+
+            <!--Stock-->
+            <LinearLayout style="@style/style_linear_layout_detail">
+
+                <TextView
+                    style="@style/style_textview_detail_title_component"
+                    android:text="Stok Barang" />
+
+                <TextView
+                    android:id="@+id/ida_tv_stock"
+                    style="@style/style_textview_detail_value_component"
+                    tools:text="Nama Barangnya apa uhhh" />
+
+            </LinearLayout>
+
+
+            <!--Price-->
+            <LinearLayout style="@style/style_linear_layout_detail">
+
+                <TextView
+                    style="@style/style_textview_detail_title_component"
+                    android:text="Harga Barang" />
+
+                <TextView
+                    android:id="@+id/ida_tv_price"
+                    style="@style/style_textview_detail_value_component"
+                    tools:text="Nama Barangnya apa uhhh" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_3sdp">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:id="@+id/ida_tablelayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/border_table"
+                                android:gravity="center"
+                                android:padding="@dimen/_3sdp"
+                                android:text="Tanggal" />
+
+                            <TextView
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/border_table"
+                                android:gravity="center"
+                                android:padding="@dimen/_3sdp"
+                                android:text="Jenis" />
+
+                            <TextView
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/border_table"
+                                android:gravity="center"
+                                android:padding="@dimen/_3sdp"
+                                android:text="No. Faktur" />
+
+                            <TextView
+                                android:layout_width="@dimen/_160sdp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/border_table"
+                                android:gravity="center"
+                                android:padding="@dimen/_3sdp"
+                                android:text="Barang masuk / keluar (kg)" />
+
+                            <TextView
+                                android:layout_width="@dimen/_160sdp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/border_table"
+                                android:gravity="center"
+                                android:padding="@dimen/_3sdp"
+                                android:text="Harga barang saat transaksi" />
+
+                            <TextView
+                                android:layout_width="@dimen/_170sdp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/border_table"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:padding="@dimen/_3sdp"
+                                android:text="Jumlah barang setelah transaksi" />
+
+                            <TextView
+                                android:layout_width="@dimen/_170sdp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/border_table"
+                                android:gravity="center"
+                                android:padding="@dimen/_3sdp"
+                                android:text="Harga barang setelah transaksi" />
+
+                            <TextView
+                                android:layout_width="@dimen/_160sdp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/border_table"
+                                android:gravity="center"
+                                android:padding="@dimen/_3sdp"
+                                android:text="Total harga barang saat ini" />
+
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </ScrollView>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

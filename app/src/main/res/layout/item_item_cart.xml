@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:elevation="@dimen/_3sdp"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/iic_iv_item"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_fabric"
+            android:layout_marginRight="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/iic_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iic_iv_item"
+            android:ellipsize="marquee"
+            android:textColor="#000"
+            android:textSize="@dimen/_10sdp"
+            tools:text="Nama Barangnya ukurannya segini" />
+
+        <TextView
+            android:id="@+id/iic_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iic_tv_name"
+            android:layout_toRightOf="@id/iic_iv_item"
+            android:layout_weight="2"
+            android:textColor="#000"
+            android:textSize="@dimen/_10sdp"
+            tools:text="300.000" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iic_tv_name"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_3sdp"
+            app:cardCornerRadius="@dimen/_2sdp"
+            app:cardElevation="@dimen/_2sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/iic_iv_minus"
+                    android:layout_width="@dimen/_12sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/ic_minus" />
+
+                <TextView
+                    android:id="@+id/iic_tv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_10sdp"
+                    tools:text="1" />
+
+                <ImageView
+                    android:id="@+id/iic_iv_plus"
+                    android:layout_width="@dimen/_12sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/ic_plus" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -9,26 +9,19 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.WindowManager
 
 import com.singpaulee.blacksandapp.R
-import com.singpaulee.blacksandapp.activities.MainActivity
 import com.singpaulee.blacksandapp.helper.SharedPrefManager
 import com.singpaulee.blacksandapp.model.ItemResultModel
-import com.singpaulee.blacksandapp.model.LoginModel
 import com.singpaulee.blacksandapp.rest.ApiInterface
 import com.singpaulee.blacksandapp.rest.RestConfig
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
-import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.fragment_item_add.*
 import kotlinx.android.synthetic.main.fragment_item_add.view.*
-import org.jetbrains.anko.intentFor
 import org.jetbrains.anko.sdk25.coroutines.onClick
-import org.jetbrains.anko.support.v4.intentFor
 import org.jetbrains.anko.support.v4.toast
-import org.jetbrains.anko.toast
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

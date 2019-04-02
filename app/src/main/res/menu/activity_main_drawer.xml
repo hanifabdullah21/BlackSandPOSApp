@@ -5,6 +5,41 @@
 
 
     <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profil"
+            android:title="Profil">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_check_profil"
+                        android:icon="@drawable/ic_profil"
+                        android:title="Cek Profil" />
+                    <item
+                        android:id="@+id/nav_prive"
+                        android:icon="@drawable/ic_prive"
+                        android:title="Prive" />
+                </group>
+            </menu>
+        </item>
+
+        <!--Employee-->
+        <item
+            android:id="@+id/nav_employee"
+            android:title="Karyawan">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_employee_add"
+                        android:icon="@drawable/ic_add_buyer"
+                        android:title="Tambah Karyawan" />
+                    <item
+                        android:id="@+id/nav_employee_list"
+                        android:icon="@drawable/ic_list_buyer"
+                        android:title="Daftar Karyawan" />
+                </group>
+            </menu>
+        </item>
+
         <!--barang-->
         <item
             android:id="@+id/nav_item"
@@ -70,6 +105,23 @@
                         android:id="@+id/nav_transaction_sell"
                         android:icon="@drawable/ic_sell"
                         android:title="Transaksi Jual" />
+                </group>
+            </menu>
+        </item>
+        <!--Asset-->
+        <item
+            android:id="@+id/nav_asset"
+            android:title="Aset">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_list_aset"
+                        android:icon="@drawable/ic_aset"
+                        android:title="Daftar Aset" />
+                    <item
+                        android:id="@+id/nav_add_aset"
+                        android:icon="@drawable/ic_add_aset"
+                        android:title="Tambah Aset" />
                 </group>
             </menu>
         </item>

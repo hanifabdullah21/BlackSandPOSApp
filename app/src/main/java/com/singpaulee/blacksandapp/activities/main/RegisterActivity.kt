@@ -1,22 +1,17 @@
-package com.singpaulee.blacksandapp.activities
+package com.singpaulee.blacksandapp.activities.main
 
 import android.annotation.SuppressLint
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.singpaulee.blacksandapp.R
-import com.singpaulee.blacksandapp.helper.SharedPrefManager
-import com.singpaulee.blacksandapp.model.LoginModel
-import com.singpaulee.blacksandapp.model.MainModel
 import com.singpaulee.blacksandapp.model.RegisterModel
 import com.singpaulee.blacksandapp.rest.ApiInterface
 import com.singpaulee.blacksandapp.rest.RestConfig
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
-import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_register.*
-import org.jetbrains.anko.intentFor
 import org.jetbrains.anko.sdk25.coroutines.onClick
 import org.jetbrains.anko.toast
 

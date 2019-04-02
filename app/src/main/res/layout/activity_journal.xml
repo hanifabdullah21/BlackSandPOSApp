@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".activities.report.JournalActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/ja_tablelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_table">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_table"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Tanggal" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_table"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Keterangan" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_table"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Keterangan" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_table"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Debit" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_table"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Kredit" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</ScrollView>

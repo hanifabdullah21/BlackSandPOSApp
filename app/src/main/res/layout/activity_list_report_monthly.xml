@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.report.ListReportMonthlyActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/lrma_tablelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_table">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_table"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Tanggal" />
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_table"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Bulan" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_table"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Penjualan" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_table"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Pembelian" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_table"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Persediaan Awal" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_table"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Persediaan Akhir" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_table"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Beban Penjualan" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_table"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Beban Pembelian" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_table"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Beban gaji" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_table"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Beban operasional" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_table"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Beban pajak" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_table"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Depresiasi Bangunan" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_table"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Depresiasi Kendaraan" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_table"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Depresiasi Peralatan" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_table"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Laba kotor" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_table"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Laba Bersih" />
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_table"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        android:text="Cetak Ulang" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</ScrollView>
