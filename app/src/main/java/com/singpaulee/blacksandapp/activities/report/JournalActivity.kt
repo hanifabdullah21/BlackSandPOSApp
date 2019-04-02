@@ -24,6 +24,7 @@ import kotlinx.android.synthetic.main.activity_journal.*
 import org.jetbrains.anko.backgroundDrawable
 import org.jetbrains.anko.padding
 import org.jetbrains.anko.toast
+import java.util.*
 
 class JournalActivity : AppCompatActivity() {
 
@@ -60,6 +61,7 @@ class JournalActivity : AppCompatActivity() {
                 if (it.status?.success as Boolean) {
                     Log.d(TAG, "result list " + it.result?.toString())
                     listJournal = it.result
+                    listJournal?.reverse()
                     setupTable()
                 } else {
                     toast("Gagal mendapatkan riwayat laporan")

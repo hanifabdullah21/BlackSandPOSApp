@@ -82,7 +82,8 @@ class AddAssetFragment : Fragment() {
                 rootView.aaf_edt_name.text.toString(),
                 category!!.toLowerCase(),
                 rootView.aaf_edt_price.text.toString().toInt(),
-                age!!
+                age!!,
+                rootView.aaf_edt_date.text.toString()
             )
 
         postAsset.subscribeOn(Schedulers.newThread())

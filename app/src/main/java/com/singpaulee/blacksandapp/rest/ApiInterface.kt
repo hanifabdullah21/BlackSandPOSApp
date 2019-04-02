@@ -35,8 +35,8 @@ interface ApiInterface {
     fun postPrive(
         @Header("Authorization") header: String,
         @Field("prive") prive: Int,
-        @Field("keterangan") keterangan: String
-//        @Field("tgl") tanggal: String
+        @Field("keterangan") keterangan: String,
+        @Field("tgl") tanggal: String
     ): Observable<FinancialResultModel>
 
     @GET("profil/keuangan")
@@ -54,6 +54,7 @@ interface ApiInterface {
     fun getListJournalByDate(
         @Header("Authorization") header: String,
         @Query("tanggal") date: String
+//        @Query("latest") latest: String
     ): Observable<JournalResultListModel>
 
     /*================================ I T E M ========================================*/
@@ -168,7 +169,8 @@ interface ApiInterface {
         @Header("Authorization") header: String,
         @Path("id") transactionID: Int,
         @Field("nilai") value: Int,
-        @Field("keterangan") information: String
+        @Field("keterangan") information: String,
+        @Field("tgl") tgl: String
     ): Observable<DebtResultModel>
 
     /*================================ A S S E T ========================================*/
@@ -180,7 +182,8 @@ interface ApiInterface {
         @Field("nama") nama: String,
         @Field("kategori") kategori: String,
         @Field("nilai") nilai: Int,
-        @Field("umur") umur: Int
+        @Field("umur") umur: Int,
+        @Field("tgl") tanggal: String
     ): Observable<AssetResultModel>
 
     @GET("asset")

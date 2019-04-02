@@ -34,7 +34,7 @@ class HelperJournalClass() {
             var year = sdf.format(dateFirst)
             monthYear = year+"-"+dateFinal
 
-            if (!list.any{x-> x.date == monthYear}){
+            if (!listJournalDate.any{x-> x.date == monthYear}){
                 var model = JournalModel(date = monthYear, month = month , year = year)
                 listJournalDate.add(model)
             }

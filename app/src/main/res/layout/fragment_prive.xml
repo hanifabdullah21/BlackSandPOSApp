@@ -54,9 +54,7 @@
                     android:inputType="textMultiLine" />
             </LinearLayout>
 
-            <LinearLayout
-                style="@style/style_linear_layout_detail"
-                android:visibility="gone">
+            <LinearLayout style="@style/style_linear_layout_detail">
 
                 <TextView
                     style="@style/style_textview_detail_title_component"

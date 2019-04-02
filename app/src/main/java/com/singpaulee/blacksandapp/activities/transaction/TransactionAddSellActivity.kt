@@ -79,9 +79,9 @@ class TransactionAddSellActivity : AppCompatActivity() {
             if (!validasi()) {
                 return@onClick
             }
-            if (atsa_edt_transport_load.text.toString().isBlank() || atsa_edt_transport_load.text.toString().isEmpty()){
+            if (atsa_edt_transport_load.text.toString().isBlank() || atsa_edt_transport_load.text.toString().isEmpty()) {
                 openDialogConfirmation()
-            }else{
+            } else {
                 freightCost = atsa_edt_transport_load.text.toString().toInt()
                 postTransaction()
             }
@@ -152,7 +152,7 @@ class TransactionAddSellActivity : AppCompatActivity() {
         atsa_btn_add_item.onClick {
             var i = Intent(this@TransactionAddSellActivity, ItemSelectionActivity::class.java)
             i.putParcelableArrayListExtra("LISTITEM", listItem)
-            i.putExtra("ACTION","SELL")
+            i.putExtra("ACTION", "SELL")
             startActivityForResult(i, 81)
         }
     }
@@ -256,7 +256,7 @@ class TransactionAddSellActivity : AppCompatActivity() {
 
     /* ----------------------------- TRANSACTION ------------------------------ */
     private fun validasi(): Boolean {
-        if (atsa_tv_buyer.text.toString().isEmpty()){
+        if (atsa_tv_buyer.text.toString().isEmpty()) {
             atsa_tv_buyer.setError("Silahkan pilih supplier")
             atsa_tv_buyer.requestFocus()
             return false
@@ -265,7 +265,7 @@ class TransactionAddSellActivity : AppCompatActivity() {
             toast("Daftar pesananmu masih kosong")
             return false
         }
-        if (atsa_tv_date.text.toString().isEmpty()){
+        if (atsa_tv_date.text.toString().isEmpty()) {
             atsa_tv_date.setError("Silahkan masukkan tanggal jatuh tempo")
             atsa_tv_date.requestFocus()
             return false
@@ -288,6 +288,7 @@ class TransactionAddSellActivity : AppCompatActivity() {
         transansactionJson.addProperty("tanggal_tempo", dateYMD)
         transansactionJson.addProperty("beban_angkut", freightCost)
         transansactionJson.addProperty("lunas", indexPaidOff)
+        transansactionJson.addProperty("tgl", atsa_edt_date.text.toString())
         transansactionJson.add("barang", JsonParser().parse(model).asJsonArray)
 
         Log.d(TAG, transansactionJson.toString())
@@ -300,7 +301,7 @@ class TransactionAddSellActivity : AppCompatActivity() {
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({ response ->
                 if (response.status?.success as Boolean) {
-                    toast("Transaksi berhasil "+response.result?.id)
+                    toast("Transaksi berhasil " + response.result?.id)
 
                     moveActivity(response.result?.id)
                 } else {
@@ -313,7 +314,7 @@ class TransactionAddSellActivity : AppCompatActivity() {
     }
 
     fun moveActivity(id: Int?) {
-        when(indexPaidOff){
+        when (indexPaidOff) {
             0 -> {
                 var intent = Intent(this, DebtRepaymentActivity::class.java)
                 intent.putExtra("ID_", id)

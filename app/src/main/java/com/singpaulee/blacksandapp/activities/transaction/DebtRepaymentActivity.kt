@@ -159,7 +159,11 @@ class DebtRepaymentActivity : AppCompatActivity() {
 
         val getListItem: Observable<DebtResultModel>? = RestConfig.retrofit
             .create<ApiInterface>(ApiInterface::class.java)
-            .postRepayment(header, transactionModel?.id!!, dra_edt_debit.text.toString().replace(",", "").toInt(), "")
+            .postRepayment(header,
+                transactionModel?.id!!,
+                dra_edt_debit.text.toString().replace(",", "").toInt(),
+                "",
+                dra_edt_date.text.toString())
 
         getListItem?.subscribeOn(Schedulers.newThread())?.observeOn(AndroidSchedulers.mainThread())
             ?.subscribe({ t: DebtResultModel? ->

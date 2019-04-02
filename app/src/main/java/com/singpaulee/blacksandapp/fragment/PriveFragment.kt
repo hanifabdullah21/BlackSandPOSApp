@@ -101,8 +101,8 @@ class PriveFragment : Fragment() {
             .postPrive(
                 header,
                 rootView.pf_edt_value.text.toString().toInt(),
-                rootView.pf_edt_information.text.toString()
-//                rootView.pf_edt_date.text.toString()
+                rootView.pf_edt_information.text.toString(),
+                rootView.pf_edt_date.text.toString()
             )
 
         prive.subscribeOn(Schedulers.newThread())

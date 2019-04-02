@@ -152,6 +152,24 @@
             android:layout_margin="@dimen/_10sdp"
             android:orientation="vertical">
 
+            <!--Tanggal-->
+            <LinearLayout
+                android:id="@+id/dra_ll_date"
+                style="@style/style_linear_layout_detail"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+                <TextView
+                    style="@style/style_textview_detail_title_component"
+                    android:layout_weight="1.5"
+                    android:text="Periode" />
+
+                <EditText
+                    android:id="@+id/dra_edt_date"
+                    style="@style/style_edittext_detail_value_component"
+                    android:hint="Tanggal" />
+
+            </LinearLayout>
+
             <!--Periode-->
             <LinearLayout
                 android:id="@+id/dra_ll_periode"
@@ -203,11 +221,11 @@
                     android:text="Saldo" />
 
                 <TextView
-                    android:gravity="left"
                     android:id="@+id/dra_tv_saldo"
                     style="@style/style_edittext_detail_value_component"
                     android:drawableLeft="@drawable/ic_rupiah"
                     android:drawablePadding="@dimen/_5sdp"
+                    android:gravity="left"
                     tools:text="Kode barangnya berapa yaaa" />
 
             </LinearLayout>

@@ -286,6 +286,7 @@ class TransactionAddBuyActivity : AppCompatActivity() {
         transansactionJson.addProperty("tanggal_tempo", dateYMD)
         transansactionJson.addProperty("beban_angkut", freightCost)
         transansactionJson.addProperty("lunas", indexPaidOff)
+        transansactionJson.addProperty("tgl", atba_edt_date.text.toString())
         transansactionJson.add("barang", JsonParser().parse(model).asJsonArray)
 
         Log.d(TAG, transansactionJson.toString())

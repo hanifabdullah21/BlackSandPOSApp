@@ -147,6 +147,7 @@ class ReportMonthlyActivity : AppCompatActivity() {
         reportJson.addProperty("tanggal", reportDataModel?.tanggal)
         reportJson.addProperty("pembelian", reportDataModel?.pembelian.toString())
         reportJson.addProperty("penjualan", reportDataModel?.penjualan.toString())
+        reportJson.addProperty("tgl", rma_edt_date.text.toString())
         reportJson.add("beban_angkut", JsonParser().parse(jsonTransportLoad).asJsonObject)
         reportJson.add("persediaan", JsonParser().parse(jsonReportStock).asJsonObject)
         reportJson.add("depresiasi", JsonParser().parse(jsonDepreciation).asJsonObject)

@@ -49,6 +49,36 @@
                     android:padding="@dimen/_5sdp">
 
                     <TextView
+                        android:id="@+id/atsa_tv_title_date"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:text="Tanggal"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/atsa_edt_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/atsa_tv_title_date"
+                        android:background="@drawable/background_edittext"
+                        android:gravity="center"
+                        android:hint="Tanggal"
+                        android:padding="@dimen/_5sdp"
+                        android:singleLine="true"
+                        tools:text="MMMMMMMMMMMMMMMMMMMMMMM" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:padding="@dimen/_5sdp">
+
+                    <TextView
                         android:id="@+id/atsa_tv_title_buyer"
                         android:layout_width="@dimen/_120sdp"
                         android:layout_height="wrap_content"
