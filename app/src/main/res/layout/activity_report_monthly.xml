@@ -32,6 +32,7 @@
             android:layout_marginBottom="@dimen/_10sdp"
             android:paddingLeft="@dimen/_5sdp"
             android:paddingTop="@dimen/_5sdp"
+            android:visibility="gone"
             android:paddingRight="@dimen/_5sdp">
 
             <TextView

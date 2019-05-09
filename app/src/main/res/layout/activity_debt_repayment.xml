@@ -156,7 +156,8 @@
             <LinearLayout
                 android:id="@+id/dra_ll_date"
                 style="@style/style_linear_layout_detail"
-                android:layout_marginBottom="@dimen/_5sdp">
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:visibility="gone">
 
                 <TextView
                     style="@style/style_textview_detail_title_component"
@@ -205,7 +206,8 @@
                     android:drawableLeft="@drawable/ic_rupiah"
                     android:drawablePadding="@dimen/_5sdp"
                     android:gravity="left"
-                    android:hint="Masukkan nilai debit" />
+                    android:hint="Masukkan nilai debit"
+                    android:inputType="number" />
 
             </LinearLayout>
 

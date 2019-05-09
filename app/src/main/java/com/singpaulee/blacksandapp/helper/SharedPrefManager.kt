@@ -53,4 +53,8 @@ class SharedPrefManager(context: Context) {
     fun getIsLogin(): Boolean {
         return pref.getBoolean(KEY_IS_LOGGED_IN, false)
     }
+
+
+
+
 }

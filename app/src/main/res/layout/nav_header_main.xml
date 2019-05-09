@@ -14,7 +14,7 @@
         android:layout_width="@dimen/_50sdp"
         android:layout_height="@dimen/_50sdp"
         android:contentDescription="@string/nav_header_desc"
-        android:src="@drawable/blacksand2" />
+        android:src="@mipmap/ic_launcher_new" />
 
     <TextView
         android:id="@+id/nhm_tv_name"

@@ -25,7 +25,9 @@ import com.singpaulee.blacksandapp.rest.RestConfig
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
+import kotlinx.android.synthetic.main.abc_tooltip.*
 import kotlinx.android.synthetic.main.activity_transaction_add_buy.*
+import org.jetbrains.anko.progressDialog
 import org.jetbrains.anko.sdk25.coroutines.onClick
 import org.jetbrains.anko.selector
 import org.jetbrains.anko.toast
@@ -36,6 +38,8 @@ import java.util.*
 class TransactionAddBuyActivity : AppCompatActivity() {
 
     private val TAG = "AddTransBuyActivity"
+
+//    var dialog = progressDialog(message = "Loading")
 
     //Supplier
     var listSupplier: ArrayList<SupplierModel>? = null //List of supplier
@@ -273,6 +277,7 @@ class TransactionAddBuyActivity : AppCompatActivity() {
 
     @SuppressLint("CheckResult")
     fun postTransaction() {
+//        dialog.show()
         var prefManager = SharedPrefManager(this@TransactionAddBuyActivity)
         var token = prefManager.getToken()
         var header = "Bearer " + token
@@ -298,6 +303,7 @@ class TransactionAddBuyActivity : AppCompatActivity() {
         transaction.subscribeOn(Schedulers.newThread())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({ response ->
+//                dialog.dismiss()
                 if (response.status?.success as Boolean) {
                     Log.d(TAG, "Post transasction " + response.status?.message)
                     toast("Transaksi berhasil " + response.result?.id)
@@ -307,6 +313,7 @@ class TransactionAddBuyActivity : AppCompatActivity() {
                     toast("Transaksi Gagal")
                 }
             }, { error ->
+//                dialog.dismiss()
                 Log.d(TAG, "" + error.message)
                 toast("Transaksi Gagal karena " + error.message)
             })

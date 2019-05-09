@@ -19,7 +19,8 @@
             android:text="Tambah Aset"
             android:textSize="@dimen/_20sdp" />
 
-        <LinearLayout style="@style/style_linear_layout_detail">
+        <LinearLayout style="@style/style_linear_layout_detail"
+            android:visibility="gone">
 
             <TextView
                 style="@style/style_textview_detail_title_component"

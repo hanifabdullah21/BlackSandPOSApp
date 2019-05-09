@@ -47,5 +47,11 @@ class BuyerDetailActivity : AppCompatActivity() {
         bda_btn_update.onClick {
             toast("Maaf, fitur ini masih dalam pengembangan")
         }
+
+
+                        var list : ArrayList<String>? = null
+//                        toast(list.get(0))
+
+
     }
 }

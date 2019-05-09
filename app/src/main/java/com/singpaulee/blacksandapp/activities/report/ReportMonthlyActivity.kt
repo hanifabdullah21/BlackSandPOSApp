@@ -226,7 +226,7 @@ class ReportMonthlyActivity : AppCompatActivity() {
             var title: Paragraph = Paragraph(
                 Phrase(
                     lineSpacing,
-                    "Laporan Laba Rugi Bulan Februari 2019",
+                    "Laporan Laba Rugi Bulan $date",
                     FontFactory.getFont(FontFactory.TIMES_ROMAN, fontSize)
                 )
             )
